@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+html, body {
+    font-family: 'Poppins', sans-serif !important; /*to overide bootstrap*/
+}
+
+.fab {
+    font-size: 3em;
+    color: cadetblue;
+}
+
+#section-one {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('pics/background.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#section-two {
+    background: url('pics/computer.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#section-three {
+    background-color: #212121;
+    color: white;
+}
+
+#section-two {
+    background-color: #eeeeee;
+}
+
+#intro-container {
+    padding-top: 27vh;
+}
+
+.bio {
+    color: white;
+    padding-top: 8%;
+    
+}
+
+#profile-picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.exp_grids {
+    border-left: 1px solid #232323;
+    padding-left: 40px;
+}
+
+.exp_grid1 {
+    margin-top: 40px;
+    position: relative;
+}
+
+.exp_grid1 span.fas {
+    position: absolute;
+    left: -50px;
+    font-size: 20px;
+    top: 0%;
+    color: #3498db;
+}
+
+#experience-row {
+    padding-top: 11vh;
+}
+
+#experience-title {
+    color: #3498db;
+}
