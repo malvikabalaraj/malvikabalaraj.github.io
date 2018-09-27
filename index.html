@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 </head>
 
 <body>
@@ -20,12 +21,17 @@
             <div id="intro-container" class="container">
                 <div class="row justify-content-md-center">
                     <div class="col-md-auto">
-                        <img src="profile2.jpg" class="rounded-circle" id="profile-picture" width="70%">
+                        <img src="profile2.jpg" class="animated slideInLeft delay-50s rounded-circle" id="profile-picture" width="70%">
                     </div>
                     <div class="bio col-md-auto">
                         <h1>Hi, I'm Malvika Balaraj</h1>
                         <h3>Management Engineering Student</h3>
                         <h3>University of Waterloo</h3>
+                        <div class="col">
+                        <a href="https://www.linkedin.com/in/malvikabalaraj/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/malvika.balaraj">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-facebook-square"></i></a>
+                        <a href="https://plus.google.com/u/0/107715334905070393723">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fab fa-google-plus-g"></i></a>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -63,29 +69,30 @@
                         </div>
                     </div>
                 </div>
+                <a id="download-btn" class="btn" href="./src/malvika_balaraj_resume_3B.pdf" download="malvika_balaraj_resume.pdf">
+			    DOWNLOAD RESUME
+		        </a>
         </section>
         <section id="section-three">
             <div class="container">
-                <h1>Contact Me</h1>
                 <div class="row">
                     <div class="col">
-                        <h4>Social</h4>
-                        <i class="fab fa-linkedin"></i>
-                        <i class="fab fa-facebook-square"></i>
-                        <i class="fab fa-google-plus-g"></i>
-                    </div>
-                    <div class="col">
-                        <h4>Email</h4>
-                        <a href="mailto:malvikabalaraj@hotmail.com">malvikabalaraj@hotmail.com</a>
-                    </div>
-                    <div class="col">
-                        <h4>Resume</h4>
-                        <a href="mailto:malvikabalaraj@hotmail.com">See my Resume!</a>
-                    </div>
+                        <h3 id="comment"><center>
+                        Hi! 
+                        <br/><br/>
+                        I am trying to get my website looking just right, and is therefore still under construction.There will be more content in the future. 
+                        <br/><br/>
+                        In the meantime, please feel free to check out my LinkedIn and contact me. I am always happy to connect!.
+                        </center></h3>            
                 </div>
             </div>
         </section>
         </div>
+        <script>
+            $( document ).ready(function(){
+            initCircles();
+            }
+        </script>
         <script src="onepage/onepagescroll.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
