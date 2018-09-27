@@ -13,3 +13,76 @@ onePageScroll(".main", {
                                      // you want the responsive fallback to be triggered. For example, set this to 600 and whenever 
                                      // the browser's width is less than 600, the fallback will kick in.
  });
+
+ function initCircles(){
+    var s = Math.random()*15+5;
+    var circle1 = {
+      height: s,
+      width: s,
+      ypos: Math.random()*window.screen.height,
+      xpos: Math.random()*window.screen.width,
+      yvel: Math.random()*1+0.5
+    }
+    s = Math.random()*15+10;
+    var circle2 = {
+      height: s,
+      width: s,
+      ypos: Math.random()*window.screen.height,
+      xpos: Math.random()*window.screen.width,
+      yvel: Math.random()*1+0.5
+    }
+    s = Math.random()*15+10;
+    var circle3 = {
+      height: s,
+      width: s,
+      ypos: Math.random()*window.screen.height,
+      xpos: Math.random()*window.screen.width,
+      yvel: Math.random()*1+0.5
+    }
+    s = Math.random()*15+10;
+    var circle4 = {
+      height: s,
+      width: s,
+      ypos: Math.random()*window.screen.height,
+      xpos: Math.random()*window.screen.width,
+      yvel: Math.random()*1+0.5
+    }
+    s = Math.random()*15+10;
+    var circle5 = {
+      height: s,
+      width: s,
+      ypos: Math.random()*window.screen.height,
+      xpos: Math.random()*window.screen.width,
+      yvel: Math.random()*1+0.5
+    }
+    s = Math.random()*15+10;
+    var circle6 = {
+      height: s,
+      width: s,
+      ypos: Math.random()*window.screen.height,
+      xpos: Math.random()*window.screen.width,
+      yvel: Math.random()*1+0.5
+    }
+    var circles = [circle1, circle2, circle3, circle4, circle5, circle6];
+    for (i = 1; i < 7; i++){
+      $("#circle".concat(String(i))).css("height", String(circles[i-1].height).concat("px"));
+      $("#circle".concat(String(i))).css("width", String(circles[i-1].width).concat("px"));
+      $("#circle".concat(String(i))).css("bottom", String(circles[i-1].ypos).concat("px"));
+      $("#circle".concat(String(i))).css("left", String(circles[i-1].xpos).concat("px"));
+    }
+  
+    var animate = setInterval(function(){
+      for (i = 0; i < 6; i++){
+        circles[i].ypos += circles[i].yvel;
+        if (circles[i].ypos >= window.screen.height){
+          circles[i].ypos = 0+40;
+          circles[i].xpos= Math.random()*window.screen.width;
+          circles[i].yvel= Math.random()*1+0.5;
+        } else if (circles[i].ypos <= 0){
+          circles[i].ypos= window.screen.height-40;
+        }
+        $("#circle".concat(String(i+1))).css("bottom", String(circles[i].ypos).concat("px"));
+        $("#circle".concat(String(i+1))).css("left", String(circles[i].xpos).concat("px"));
+      }
+    }, 10);
+  }

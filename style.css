@@ -73,3 +73,34 @@ html, body {
 #experience-title {
     color: #3498db;
 }
+
+.btn {
+    display: block;
+    padding: 10px 0px;
+    color: rgb(255, 225, 210); 
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    width: 350px;
+    border-radius: 3px;
+    background-color: rgb(52,152,219);
+    opacity: 0.7;
+    border: 2px solid rgb(52,152,219);
+    -webkit-transition-duration: 1.2s; /* Safari */
+    transition-duration: 1.2s;
+    clear: left;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: rgb(240, 235, 235); 
+    color: rgb(52,152,219);
+    cursor: pointer;
+}
+
+#comment {
+ margin: 20%
+}
